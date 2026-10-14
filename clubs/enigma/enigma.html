@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enigma - The Dance Crew</title>
+  <link rel="stylesheet" href="enigma.css" />
+  <link rel="icon" href="https://spechyd.ac.in/images/logo.png" />
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="college-title">
+    <h1>St. PETER'S ENGINEERING COLLEGE</h1>
+    <p>UGC Autonomous | Affiliated to JNTU Hyderabad</p>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="#" data-target="about">About</a></li>
+      <li><a href="#" data-target="mission">Mission</a></li>
+      <li><a href="#" data-target="exec">Executive</a></li>
+      <li><a href="#" data-target="activities">Activities</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Layout -->
+<div class="container">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <img src="image.png" alt="Enigma Club">
+    <ul>
+      <li><a href="#" data-target="about">About</a></li>
+      <li><a href="#" data-target="mission">Mission</a></li>
+      <li><a href="#" data-target="exec">Executive Members</a></li>
+      <li><a href="#" data-target="activities">Club Activities</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <section id="about">
+      <h2>About</h2>
+      <p>The Enigma is one of the active clubs run by the institute's students from 2022-23. It organizes many dance events, workshops, etc., at SPEC throughout the year to ensure students stay engaged creatively. Formed to unite students with a passion for dance and represent the college through performance.</p>
+    </section>
+
+    <section id="mission">
+      <h2>Mission</h2>
+      <ul>
+        <li>✅ Display understanding of expressions and rhythm.</li>
+        <li>✅ Apply value systems and principles to performances.</li>
+        <li>✅ Provide training to develop dancing skills.</li>
+        <li>✅ Participate in institutional-level programs.</li>
+        <li>✅ Compete in intercollege, state, and national competitions.</li>
+      </ul>
+    </section>
+
+    <!-- Executive Board -->
+    <section id="exec">
+      <h2>Executive Board Members</h2>
+      <div class="card-grid">
+        <div class="card"><img src="../../assets/manwita.jpg"><h3>V. N. Manwita Reddy</h3><p>President</p></div>
+        <div class="card"><img src="../../assets/sai.jpg"><h3>K. Sai Kumar</h3><p>Secretary</p></div>
+        <div class="card"><img src="../../assets/chetan.jpg"><h3>B. Chetan</h3><p>Vice President</p></div>
+        <div class="card"><img src="../../assets/vamshi.jpg"><h3>K. Vamshi</h3><p>Joint Secretary</p></div>
+        <div class="card"><img src="../../assets/haseena.jpg"><h3>Sk. Haseena</h3><p>Club Admin</p></div>
+      </div>
+    </section>
+
+    <!-- Activities -->
+    <section id="activities">
+      <h2>Club Activities</h2>
+      <ul>
+        <li>✅ Conduct training sessions for juniors</li>
+        <li>✅ Participate in intercollege and state-level competitions</li>
+        <li>✅ Perform in Independence Day, Republic Day, Alumni Meet, Farewell</li>
+        <li>✅ Perform during AQUILLA, the annual fest</li>
+        <li>✅ Organize events: Natyotsav, Howls of Rhythm, Flashmob</li>
+        <li>✅ Follow us on Instagram: <a href="https://instagram.com" target="_blank">Enigma Instagram</a></li>
+      </ul>
+    </section>
+  </main>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2025 St. Peter's Engineering College | Designed by Vishnu Vardhan</p>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank">Facebook</a> |
+      <a href="https://instagram.com" target="_blank">Instagram</a> |
+      <a href="mailto:info@spechyd.ac.in">Mail</a> |
+      <a href="https://spechyd.ac.in/" target="_blank">
+        <img src="https://spechyd.ac.in/images/logo.png" alt="University Logo" height="20px">
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- Smooth Scroll -->
+<script>
+  document.querySelectorAll('a[data-target]').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const id = this.getAttribute('data-target');
+      const section = document.getElementById(id);
+      if (section) {
+        window.scrollTo({ top: section.offsetTop - 60, behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
