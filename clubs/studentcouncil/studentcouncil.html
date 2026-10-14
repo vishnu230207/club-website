@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Council Club</title>
+  <link rel="stylesheet" href="studentcouncil.css" />
+  <link rel="icon" href="https://spechyd.ac.in/images/logo.png" />
+</head>
+<body>
+
+<header>
+  <div class="college-title">
+    <h1>St. PETER'S ENGINEERING COLLEGE</h1>
+    <p>UGC Autonomous | Affiliated to JNTU Hyderabad</p>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#members">Members</a></li>
+      <li><a href="#core">Core Members</a></li>
+      <li><a href="#clubs">Club Secretaries</a></li>
+      <li><a href="#events">Events</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="main-content">
+  <aside class="sidebar">
+    <img src="image.png" alt="Student Council">
+    <ul>
+      <li><a href="#about">📝 About</a></li>
+      <li><a href="#members">👔 Board Members</a></li>
+      <li><a href="#core">📌 Core Members</a></li>
+      <li><a href="#clubs">🗂️ Club Secretaries</a></li>
+      <li><a href="#events">📆 Events</a></li>
+    </ul>
+  </aside>
+
+  <section class="content">
+    <h2>Student Council Club</h2>
+
+    <section id="about">
+      <h3>📝 About</h3>
+      <p>The Student Council helps share ideas, interests, and concerns with teachers and institute administrative authorities. It also helps raise funds for college-wide activities, including social events.</p>
+      <p>There are various Student Council positions, and each position comes with its own responsibilities:</p>
+      <ul>
+        <li>👉 <strong>President</strong> – Represents the entire student body. Responsible for organizing all council activities and running meetings.</li>
+        <li>👉 <strong>Secretary</strong> – Maintains meeting minutes, reports, and member records.</li>
+      </ul>
+    </section>
+
+    <section id="members">
+      <h3>👔 Board Members</h3>
+      <div class="card-container">
+        <div class="card">
+          <img src="../assets/studentcouncil1.jpg" />
+          <h4>Rahul Reddy</h4>
+          <p>President (4th AI&ML)</p>
+        </div>
+        <div class="card">
+          <img src="../assets/studentcouncil2.jpg" />
+          <h4>Tanish A Lotia</h4>
+          <p>Secretary (4th CSD)</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="core">
+      <h3>📌 Core Members</h3>
+      <div class="card-container">
+        <div class="card"><h4>Madhu</h4><p>Student Coordinator - IT</p></div>
+        <div class="card"><h4>Jaya Prakash</h4><p>Student Coordinator - Civil</p></div>
+        <div class="card"><h4>Raju</h4><p>Student Coordinator - Mech</p></div>
+        <div class="card"><h4>K. Kumar</h4><p>Student Coordinator - CSE</p></div>
+        <div class="card"><h4>Akanksha</h4><p>Student Coordinator - ECE</p></div>
+      </div>
+    </section>
+
+    <section id="clubs">
+      <h3>🗂️ Club Secretaries</h3>
+      <div class="card-container">
+        <div class="card"><h4>G. Madhurima</h4><p>Music Club - Awake Revolution</p></div>
+        <div class="card"><h4>Anusha</h4><p>Social Media Club</p></div>
+        <div class="card"><h4>Prashanth Kumar</h4><p>Sports Club</p></div>
+        <div class="card"><h4>Durgi Akshaya</h4><p>Radio Club - Albedo</p></div>
+        <div class="card"><h4>Shashi</h4><p>Dance Club - Enigma</p></div>
+        <div class="card"><h4>Rayan Ali</h4><p>Photography Club - Shutter Bugs</p></div>
+        <div class="card"><h4>Jayanth</h4><p>Arts & Media Club - Arsarena</p></div>
+      </div>
+    </section>
+
+    <section id="events">
+      <h3>📆 Organized Events</h3>
+      <ul>
+        <li>✅ IGNITE – Orientation Day</li>
+        <li>✅ MUSICAL NIGHT</li>
+        <li>✅ Photography Workshop</li>
+        <li>✅ Club Intros</li>
+        <li>✅ Graduation Day</li>
+      </ul>
+    </section>
+
+  </section>
+</div>
+
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2025 St. Peter's Engineering College | Designed by Vishnu Vardhan</p>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank">Facebook</a> |
+      <a href="https://instagram.com" target="_blank">Instagram</a> |
+      <a href="mailto:info@spechyd.ac.in">Mail</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href'))
+      .scrollIntoView({ behavior: 'smooth' });
+  });
+});
+</script>
+
+</body>
+</html>
