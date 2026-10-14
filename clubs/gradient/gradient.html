@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gradient Club - Ideas Are Automated</title>
+  <link rel="stylesheet" href="gradient.css" />
+  <link rel="icon" href="https://spechyd.ac.in/images/logo.png" />
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="college-title">
+    <h1>St. PETER'S ENGINEERING COLLEGE</h1>
+    <p>UGC Autonomous | Affiliated to JNTU Hyderabad</p>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="#" data-target="intro">Intro</a></li>
+      <li><a href="#" data-target="vision">Vision</a></li>
+      <li><a href="#" data-target="mission">Mission</a></li>
+      <li><a href="#" data-target="office">Office Bearers</a></li>
+      <li><a href="#" data-target="coordinators">Coordinators</a></li>
+      <li><a href="#" data-target="events">Technical Events</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="container">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <img src="../../assets/gradient.jpg" alt="Gradient Club">
+    <ul>
+      <li><a href="#" data-target="intro">Intro</a></li>
+      <li><a href="#" data-target="vision">Vision</a></li>
+      <li><a href="#" data-target="mission">Mission</a></li>
+      <li><a href="#" data-target="office">Office Bearers</a></li>
+      <li><a href="#" data-target="coordinators">Coordinators</a></li>
+      <li><a href="#" data-target="events">Events</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <section id="intro">
+      <h2>Intro</h2>
+      <p>The Gradient Club conducts interactive sessions mainly for AI & ML students to assist them in discovering or deepening their domain of interest. Students can explore multiple tech areas before deciding their direction.</p>
+    </section>
+
+    <section id="vision">
+      <h2>Vision</h2>
+      <p>To be renowned for molding students into skilled professionals fostering technological development, research, and innovative ideas that meet societal needs.</p>
+    </section>
+
+    <section id="mission">
+      <h2>Mission</h2>
+      <ul>
+        <li>👉 Making students knowledgeable in AI and its applied areas.</li>
+        <li>👉 Training students in cutting-edge technologies with community support.</li>
+        <li>👉 Fostering research, innovation, and entrepreneurship.</li>
+      </ul>
+    </section>
+
+    <section id="office">
+      <h2>Office Bearers</h2>
+      <div class="card-grid">
+        <div class="card"><img src="../../assets/sagar.jpg"><h3>RLVNSG Sagar</h3><p>President</p></div>
+        <div class="card"><img src="../../assets/siri.jpg"><h3>Siri Chandana</h3><p>Vice President</p></div>
+        <div class="card"><img src="../../assets/murari.jpg"><h3>V Murari</h3><p>Secretary</p></div>
+        <div class="card"><img src="../../assets/akshitha.jpg"><h3>B Akshitha</h3><p>Joint Secretary</p></div>
+        <div class="card"><img src="../../assets/vanditha.jpg"><h3>Vanditha</h3><p>Treasurer</p></div>
+      </div>
+    </section>
+
+    <section id="coordinators">
+      <h2>Coordinators</h2>
+      <div class="card-grid">
+        <div class="card"><img src="../../assets/shashi.jpg"><h3>Shashi</h3><p>Coordinator</p></div>
+        <div class="card"><img src="../../assets/deekshitha.jpg"><h3>Deekshitha</h3><p>Coordinator</p></div>
+        <div class="card"><img src="../../assets/sandeep.jpg"><h3>Kota Sandeep</h3><p>Coordinator</p></div>
+      </div>
+    </section>
+
+    <section id="events">
+      <h2>Technical Events</h2>
+      <h3>Workshops</h3>
+      <ul>
+        <li>IOT Workshop</li>
+        <li>Machine Learning Workshop</li>
+        <li>Web Design Workshop</li>
+        <li>World of AI</li>
+        <li>Deep Learning Technologies</li>
+      </ul>
+      <h3>Guest Lectures</h3>
+      <ul>
+        <li>Futuristic Technologies</li>
+        <li>AI-based Real Life Applications</li>
+        <li>Web 3.0 Technologies</li>
+        <li>IoT through AI</li>
+        <li>ML & Data Analytics Foundation</li>
+      </ul>
+      <h3>Tech Talks</h3>
+      <ul>
+        <li>IoT Ideas for the Future</li>
+        <li>Career in AI</li>
+        <li>How Data is Collected (Real World)</li>
+      </ul>
+      <h3>Seminars</h3>
+      <p>Various seminars are conducted regularly including participation in hackathons and mini-project sessions like:</p>
+      <ul>
+        <li>Forest Fire and Agriculture Mini Projects</li>
+        <li>Raspberry Pi + OpenCV Demos</li>
+        <li>Sensor Hands-on: Motors, Gas Sensors, Alcohol Sensors</li>
+        <li>Real-time IoT Apps & Traffic Light Code Execution</li>
+      </ul>
+    </section>
+  </main>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2025 St. Peter's Engineering College | Designed by Vishnu Vardhan</p>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank">Facebook</a> |
+      <a href="https://instagram.com" target="_blank">Instagram</a> |
+      <a href="mailto:info@spechyd.ac.in">Mail</a> |
+      <a href="https://spechyd.ac.in/" target="_blank">
+        <img src="https://spechyd.ac.in/images/logo.png" alt="University Logo" height="20px">
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- Smooth Scroll -->
+<script>
+  document.querySelectorAll('a[data-target]').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const id = this.getAttribute('data-target');
+      const section = document.getElementById(id);
+      if (section) {
+        window.scrollTo({ top: section.offsetTop - 60, behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
