@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>St. Peter's Engineering College Clubs</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="https://spechyd.ac.in/images/logo.png">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="college-title">
+      <h1>St. PETER'S ENGINEERING COLLEGE</h1>
+      <p>UGC Autonomous | Affiliated to JNTU Hyderabad</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#" data-target="about">About</a></li>
+        <li><a href="#" data-target="clubs">Clubs</a></li>
+        <li><a href="#" data-target="contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Welcome Section -->
+  <section class="welcome" id="about">
+    <div class="welcome-image">
+      <div class="overlay">
+        <h2>Welcome to Our College</h2>
+        <p>
+          Students are the life and soul of all educational enterprise. At the SPEC College, students have the unique opportunity of not just witnessing an Institution in the making but participating in the making as well. Winston Churchill once said that we shape our Institution and these in turn shape our lives. The heady experience of joining hands with...
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clubs Section -->
+  <section id="clubs" class="clubs-section">
+    <h2>Our Clubs</h2>
+    <div class="clubs-container">
+      <a href="clubs/studentcouncil/studentcouncil.html" class="club-card">
+        <img src="assets/studentcouncil.jpg" alt="Student Council">
+        <div>Student Council</div>
+      </a>
+      <a href="clubs/shutterbugs/shutterbugs.html" class="club-card">
+        <img src="assets/shutterbugs.jpg" alt="Shutterbugs">
+        <div>Shutterbugs (Photography Club)</div>
+      </a>
+      <!-- <a href="clubs/origin.html" class="club-card">
+        <img src="assets/origin.jpg" alt="Origin">
+        <div>Origin Club</div>
+      </a>
+      <a href="clubs/sports.html" class="club-card">
+        <img src="assets/sports.jpg" alt="Sports">
+        <div>Sports Club</div>
+      </a> -->
+      <a href="clubs/gradient/gradient.html" class="club-card">
+        <img src="assets/gradient.jpg" alt="Gradient">
+        <div>Gradient Club</div>
+      </a>
+      
+      <a href="clubs/rotaract/rotaract.html" class="club-card">
+        <img src="assets/rotaract.jpg" alt="Rotaract">
+        <div>Rotaract Club</div>
+      </a>
+      <a href="clubs/albedo/albedo.html" class="club-card">
+        <img src="assets/albedo1.jpg" alt="Albedo">
+        <div>ALBEDO (Radio Club)</div>
+      </a>
+      <a href="clubs/music/music.html" class="club-card">
+        <img src="assets/music1.jpg" alt="Music">
+        <div>Awake Revelation (Music Club)</div>
+      </a>
+      <a href="clubs/arsarena/arsarena.html" class="club-card">
+        <img src="assets/arsarena.jpg" alt="ARSARENA">
+        <div>ARSARENA (Arts & Editing)</div>
+      </a>
+      <a href="clubs/enigma/enigma.html" class="club-card">
+        <img src="assets/engima.jpg" alt="ENIGMA">
+        <div>ENIGMA (Dance Club)</div>
+      </a>
+      <a href="clubs/socialmedia/socialmedia.html" class="club-card">
+        <img src="assets/socialmedia.jpg" alt="Social Media">
+        <div>Social Media</div>
+      </a>
+      
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:info@spechyd.ac.in">info@spechyd.ac.in</a></p>
+    <p>Phone: +91-40-29552106</p>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 St. Peter's Engineering College | Designed by Vishnu Vardhan</p>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank">Facebook</a> |
+        <a href="https://instagram.com" target="_blank">Instagram</a> |
+        <a href="mailto:info@spechyd.ac.in">Mail</a> |
+        <a href="https://spechyd.ac.in/" target="_blank">
+          <img src="https://spechyd.ac.in/images/logo.png" alt="University Logo" height="20px">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for smooth scroll -->
+  <script>
+    document.querySelectorAll('nav a[data-target]').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('data-target');
+        const section = document.getElementById(targetId);
+        if (section) {
+          window.scrollTo({
+            top: section.offsetTop - 60,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
